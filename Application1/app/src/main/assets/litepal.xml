@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <litepal>
+    <dbname value="MemoDB"></dbname>
+    <version value="1"></version>
+    <list>
+        <mapping class="com.example.w11587.application1.SetMemo.Memo"></mapping>
+    </list>
+    </litepal>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.w11587.application1.MainActivity">
+
+    <fragment
+        android:id="@+id/fragment_main"
+        android:name="com.example.w11587.application1.BottomFragment.MainFragment"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_above="@+id/radiogroup"
+        android:layout_alignParentTop="true" />
+    <fragment
+        android:id="@+id/fragment_msg"
+        android:name="com.example.w11587.application1.BottomFragment.MsgFragment"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_above="@+id/radiogroup"
+        android:layout_alignParentTop="true" />
+    <fragment
+        android:id="@+id/fragment_friend"
+        android:name="com.example.w11587.application1.BottomFragment.FriendFragment"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_above="@+id/radiogroup"
+        android:layout_alignParentTop="true" />
+    <fragment
+        android:id="@+id/fragment_my"
+        android:name="com.example.w11587.application1.BottomFragment.MyFragment"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_above="@+id/radiogroup"
+        android:layout_alignParentTop="true" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:text="female" >
+
+        <RadioButton
+            android:id="@+id/btn_0"
+            android:layout_width="fill_parent"
+            android:layout_height="54dp"
+            android:layout_alignParentLeft="true"
+            android:layout_weight="1"
+            android:background="@drawable/radio_main"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="17.0sp" />
+        <RadioButton
+            android:id="@+id/btn_1"
+            android:layout_width="fill_parent"
+            android:layout_height="54dp"
+            android:layout_weight="1"
+            android:background="@drawable/radio_msg"
+            android:button="@null"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="17.0sp" />
+        <RadioButton
+            android:id="@+id/btn_2"
+            android:layout_width="fill_parent"
+            android:layout_height="54dp"
+            android:layout_weight="1"
+            android:background="@drawable/radio_friend"
+            android:button="@null"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="17.0sp" />
+        <RadioButton
+            android:id="@+id/btn_3"
+            android:layout_width="fill_parent"
+            android:layout_height="54dp"
+            android:layout_weight="1"
+            android:background="@drawable/radio_my"
+            android:button="@null"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="17.0sp" />
+    </RadioGroup>
+
+</RelativeLayout>

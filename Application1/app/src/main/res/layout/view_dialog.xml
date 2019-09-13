@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/drawable_round_edge">
+
+    <Button
+        android:id="@+id/click_cancel_alert"
+        android:padding="10dp"
+        android:text="取消提醒"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:background="@android:color/darker_gray"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+
+    <Button
+        android:id="@+id/clickdelete"
+        android:padding="10dp"
+        android:text="删除"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+
+
+</LinearLayout>
