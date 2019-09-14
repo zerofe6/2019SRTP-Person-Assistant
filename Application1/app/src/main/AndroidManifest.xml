@@ -22,17 +22,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".login_and_register.LoginActivity"
-            android:theme="@style/AppTheme.NoActionBar">
+
+        <activity android:name=".login_and_register.LoginActivity">
+            <!--android:theme="@style/AppTheme.NoActionBar"-->
             //登录
         </activity>
-        <activity android:name=".login_and_register.RegisterActivity"
-            android:theme="@style/AppTheme.NoActionBar">
+
+        <activity android:name=".login_and_register.RegisterActivity">
             //注册
         </activity>
+
         <activity android:name=".DrawActivity"></activity>
+
         <activity android:name=".SearchActivity"></activity>
+
         <activity android:name=".SetMemo.Edit"></activity>
+
         <activity android:name=".SetMemo.MemoActivity"></activity>
 
         <meta-data

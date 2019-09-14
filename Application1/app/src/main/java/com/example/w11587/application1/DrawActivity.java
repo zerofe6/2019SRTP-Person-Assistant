@@ -7,6 +7,8 @@ import android.graphics.drawable.ColorDrawable;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.view.Menu;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
@@ -18,15 +20,30 @@ public class DrawActivity extends AppCompatActivity{
     private AlertDialog dialog = null;
     private TextView tvDelete;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_draw);
 
+        Toolbar toolbar_draw=(Toolbar) findViewById(R.id.toolbar_draw);
+        toolbar_draw.setTitle("共享白板");
+        setSupportActionBar(toolbar_draw);
+
+
         //showDialog();// 对话框提示
-
-
     }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu)
+    {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        //getMenuInflater().inflate(R.menu.min, menu);
+        //return true;
+        getMenuInflater().inflate(R.menu.memo_toolbar,menu);
+        return true;
+    }
+
 
     /**
      * 对话框提示
