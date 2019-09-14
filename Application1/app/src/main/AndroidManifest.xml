@@ -22,10 +22,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".login_and_register.LoginActivity">
+        <activity android:name=".login_and_register.LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar">
             //登录
         </activity>
-        <activity android:name=".login_and_register.RegisterActivity">
+        <activity android:name=".login_and_register.RegisterActivity"
+            android:theme="@style/AppTheme.NoActionBar">
             //注册
         </activity>
         <activity android:name=".DrawActivity"></activity>
