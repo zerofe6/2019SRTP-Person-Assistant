@@ -12,6 +12,7 @@ import android.graphics.drawable.ColorDrawable;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -54,6 +55,9 @@ public class MemoActivity  extends AppCompatActivity
         setContentView(R.layout.activity_memo);
 
 
+        Toolbar toolbar_memo=(Toolbar) findViewById(R.id.toolbar_memo);
+        toolbar_memo.setTitle("备忘录");
+        setSupportActionBar(toolbar_memo);
 
         Connector.getDatabase();
         //addDataLitepPal();

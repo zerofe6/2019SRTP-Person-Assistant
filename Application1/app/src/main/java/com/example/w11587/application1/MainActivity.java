@@ -3,6 +3,7 @@ package com.example.w11587.application1;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.View;
@@ -54,6 +55,24 @@ public class MainActivity extends AppCompatActivity {
         radioButton.setChecked(true);
 
 
+        //自定义toolbar
+        Toolbar toolbar_main=(Toolbar) findViewById(R.id.toolbar_main);
+        toolbar_main.setTitle("个人助手");
+        setSupportActionBar(toolbar_main);
+
+        Toolbar toolbar_friend=(Toolbar) findViewById(R.id.toolbar_friend);
+        toolbar_friend.setTitle("好友");
+        setSupportActionBar(toolbar_friend);
+
+        Toolbar toolbar_msg=(Toolbar) findViewById(R.id.toolbar_msg);
+        toolbar_msg.setTitle("消息");
+        setSupportActionBar(toolbar_msg);
+
+        Toolbar toolbar_my=(Toolbar) findViewById(R.id.toolbar_my);
+        toolbar_my.setTitle("个人中心");
+        setSupportActionBar(toolbar_my);
+
+
         //开始处理Fragment
         fragment1 = new MsgFragment();
         fragment2 = new FriendFragment();
@@ -93,7 +112,10 @@ public class MainActivity extends AppCompatActivity {
         // Inflate the menu; this adds items to the action bar if it is present.
         //getMenuInflater().inflate(R.menu.min, menu);
         //return true;
-        getMenuInflater().inflate(R.menu.main,menu);
+        getMenuInflater().inflate(R.menu.main_toolbar,menu);
+        getMenuInflater().inflate(R.menu.friend_toolbar,menu);
+        getMenuInflater().inflate(R.menu.msg_toolbar,menu);
+        getMenuInflater().inflate(R.menu.my_toolbar,menu);
         return true;
     }
 
