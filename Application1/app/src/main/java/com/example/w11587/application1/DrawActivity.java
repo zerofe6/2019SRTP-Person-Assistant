@@ -40,7 +40,7 @@ public class DrawActivity extends AppCompatActivity{
         // Inflate the menu; this adds items to the action bar if it is present.
         //getMenuInflater().inflate(R.menu.min, menu);
         //return true;
-        getMenuInflater().inflate(R.menu.memo_toolbar,menu);
+        getMenuInflater().inflate(R.menu.draw_toolbar,menu);
         return true;
     }
 
