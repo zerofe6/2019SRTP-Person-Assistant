@@ -1,0 +1,24 @@
+1.GenericServlet：
+1). 是一个servlet 是servlet接口和ServletConfig的实现方法。但是一个抽象类，其中的service方法为抽象方法
+
+2). 如果新建的servlet 程序直接继承GenericServlet会使开发更加简洁
+3). 具体实现
+     ①. 在GenericServlet 中申明了一个servletConfig类型的成员变量，在init（servletConfig）方法中对其进行了初始化
+     ②. 利用servletConfig 成员变量实现了servletConfig方法
+     ③. 还定义了一个init方法，在init（ServletConfig）中方法中对其调用，子类可以直接覆盖init（）在其中实现对servlet的初始化操作
+     ④. 不建议直接覆盖init方法，因为如果忘记了编写super（ServletConfig），还是用了servletConfig接口的方法，会报空指针异常 
+     ⑤. 新建的init（）{}并非servlet的生命周期方法，而init（servletConfig）是生命周期相关的方法
+
+2.HTTPServlet:
+1). 是一个Servlet， 继承自GenericServlet。针对Http协议所制定
+
+2). 在service方法中直接把servletRequest和ServletResponse转为HTTPServletRequest 和HTTPServletResponse
+             并调用了重载的service（HTTPServletRequest，HTTPServletResponse）方法
+             在该方法中获取了请求方式：request.getMethod().根据相应的请求方式，创建了相应的处理请求方法（doGet,doPost）
+             
+3). 实际开发中，直接继承HTTPServlet，并根据请求方式复写doXxx()方法接口  
+
+4). 优点：直接由针对性的覆盖doXxx方法；直接使用HTTPServletRequest 和HTTPServletResponse，不再需要强制类型转化。           
+           
+
+           

@@ -16,7 +16,8 @@ import com.wangj.baselibrary.util.LoadingDialogUtil;
 public class MainActivity extends BaseActivity {
 
     //private String URL_LOGIN = "http://26826h283j.zicp.vip:24369/MyWorld_Service/LoginServlet";
-    private String URL_LOGIN = "http://277673f6x5.wicp.vip:32311/personassint/register";
+    private String URL_LOGIN = "http://277673f6x5.wicp.vip:32311/personassint/login";
+    private String URL_REGISTER = "http://277673f6x5.wicp.vip:32311/personassint/register";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,19 +30,20 @@ public class MainActivity extends BaseActivity {
         final EditText reName = (EditText) findViewById(R.id.re_name);
         final EditText rePassword = (EditText) findViewById(R.id.re_password);
 
-        /*Button btnLogin = (Button) findViewById(R.id.btn_login);
+        Button btnLogin = (Button) findViewById(R.id.btn_login);
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 login(etName.getText().toString(), etPassword.getText().toString());
             }
-        });*/
+        });
 
         Button btnRegister = (Button) findViewById(R.id.btn_register);
         btnRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                register(reName.getText().toString(), rePassword.getText().toString());
+                register(reName.getText().toString(), rePassword.getText().toString(),"newuser");
+                //注册应该为三个参数,这里用户名为中文时服务端抛异常 解码出错 待解决
             }
         });
 
@@ -52,7 +54,7 @@ public class MainActivity extends BaseActivity {
         final TextView tvResponse = (TextView) findViewById(R.id.tv_response);
 
         final CommonRequest request = new CommonRequest();
-        request.addRequestParam("account", name);
+        request.addRequestParam("name", name);
         request.addRequestParam("password", password);
         sendHttpPostRequest(URL_LOGIN, request, new ResponseHandler() {
             @Override
@@ -79,14 +81,15 @@ public class MainActivity extends BaseActivity {
 
     }
 
-    private void register(String name, String password) {
+    private void register(String name, String password,String username) {
         final TextView tvRequest = (TextView) findViewById(R.id.tv_request);
         final TextView tvResponse = (TextView) findViewById(R.id.tv_response);
 
         final CommonRequest request = new CommonRequest();
-        request.addRequestParam("name", name);
+        request.addRequestParam("account", name);
         request.addRequestParam("password", password);
-        sendHttpPostRequest(URL_LOGIN, request, new ResponseHandler() {
+        request.addRequestParam("username",username);
+        sendHttpPostRequest(URL_REGISTER, request, new ResponseHandler() {
             @Override
             public void success(CommonResponse response) {
                 LoadingDialogUtil.cancelLoading();

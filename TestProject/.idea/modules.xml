@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/PSA-TestProject.iml" filepath="$PROJECT_DIR$/PSA-TestProject.iml" />
       <module fileurl="file://$PROJECT_DIR$/TestProject.iml" filepath="$PROJECT_DIR$/TestProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/TestProject-app.iml" filepath="$PROJECT_DIR$/app/TestProject-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/baselibrary/TestProject-baselibrary.iml" filepath="$PROJECT_DIR$/baselibrary/TestProject-baselibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/baselibrary/baselibrary.iml" filepath="$PROJECT_DIR$/baselibrary/baselibrary.iml" />
     </modules>
