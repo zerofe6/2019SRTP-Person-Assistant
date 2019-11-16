@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" metadata-complete="true" version="4.0">
+  <context-param>
+    <param-name>driver</param-name>
+    <param-value>com.mysql.jdbc.Driver</param-value>
+  </context-param>
+  <context-param>
+    <param-name>jdbcURl</param-name>
+    <param-value>jdbc:mysql:///fzero</param-value>
+  </context-param>
+  <servlet>
+    <servlet-name>login</servlet-name>
+    <servlet-class>dall.LoginHttpServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>login</servlet-name>
+    <url-pattern>/log</url-pattern>
+  </servlet-mapping>
+  <servlet><!-- 登录处理  -->
+    <servlet-name>person</servlet-name>
+    <servlet-class>dall.loginservlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>person</servlet-name>
+    <url-pattern>/hello</url-pattern>
+  </servlet-mapping>
+</web-app>

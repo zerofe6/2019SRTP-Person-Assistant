@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="E:/Tomcat/apache-tomcat-9.0.27/lib/annotations-api.jar"/>
+	<classpathentry kind="lib" path="E:/Tomcat/apache-tomcat-9.0.27/lib/catalina.jar"/>
+	<classpathentry kind="lib" path="E:/Tomcat/apache-tomcat-9.0.27/lib/catalina-ant.jar"/>
+	<classpathentry kind="lib" path="E:/Tomcat/apache-tomcat-9.0.27/lib/catalina-ha.jar"/>
+	<classpathentry kind="lib" path="E:/Tomcat/apache-tomcat-9.0.27/lib/catalina-storeconfig.jar"/>
+	<classpathentry kind="lib" path="E:/Tomcat/apache-tomcat-9.0.27/lib/catalina-tribes.jar"/>
+	<classpathentry kind="lib" path="E:/Tomcat/apache-tomcat-9.0.27/lib/ecj-4.13.jar"/>
+	<classpathentry kind="lib" path="E:/Tomcat/apache-tomcat-9.0.27/lib/el-api.jar"/>
+	<classpathentry kind="lib" path="E:/Tomcat/apache-tomcat-9.0.27/lib/jasper.jar"/>
+	<classpathentry kind="lib" path="E:/Tomcat/apache-tomcat-9.0.27/lib/jasper-el.jar"/>
+	<classpathentry kind="lib" path="E:/Tomcat/apache-tomcat-9.0.27/lib/jaspic-api.jar"/>
+	<classpathentry kind="lib" path="E:/Tomcat/apache-tomcat-9.0.27/lib/jsp-api.jar"/>
+	<classpathentry kind="lib" path="E:/Tomcat/apache-tomcat-9.0.27/lib/servlet-api.jar"/>
+	<classpathentry kind="lib" path="E:/Tomcat/apache-tomcat-9.0.27/lib/tomcat-api.jar"/>
+	<classpathentry kind="lib" path="E:/Tomcat/apache-tomcat-9.0.27/lib/tomcat-coyote.jar"/>
+	<classpathentry kind="lib" path="E:/Tomcat/apache-tomcat-9.0.27/lib/tomcat-dbcp.jar"/>
+	<classpathentry kind="lib" path="E:/Tomcat/apache-tomcat-9.0.27/lib/tomcat-i18n-cs.jar"/>
+	<classpathentry kind="lib" path="E:/Tomcat/apache-tomcat-9.0.27/lib/tomcat-i18n-de.jar"/>
+	<classpathentry kind="lib" path="E:/Tomcat/apache-tomcat-9.0.27/lib/tomcat-i18n-es.jar"/>
+	<classpathentry kind="lib" path="E:/Tomcat/apache-tomcat-9.0.27/lib/tomcat-i18n-fr.jar"/>
+	<classpathentry kind="lib" path="E:/Tomcat/apache-tomcat-9.0.27/lib/tomcat-i18n-ja.jar"/>
+	<classpathentry kind="lib" path="E:/Tomcat/apache-tomcat-9.0.27/lib/tomcat-i18n-ko.jar"/>
+	<classpathentry kind="lib" path="E:/Tomcat/apache-tomcat-9.0.27/lib/tomcat-i18n-pt-BR.jar"/>
+	<classpathentry kind="lib" path="E:/Tomcat/apache-tomcat-9.0.27/lib/tomcat-i18n-ru.jar"/>
+	<classpathentry kind="lib" path="E:/Tomcat/apache-tomcat-9.0.27/lib/tomcat-i18n-zh-CN.jar"/>
+	<classpathentry kind="lib" path="E:/Tomcat/apache-tomcat-9.0.27/lib/tomcat-jdbc.jar"/>
+	<classpathentry kind="lib" path="E:/Tomcat/apache-tomcat-9.0.27/lib/tomcat-jni.jar"/>
+	<classpathentry kind="lib" path="E:/Tomcat/apache-tomcat-9.0.27/lib/tomcat-util.jar"/>
+	<classpathentry kind="lib" path="E:/Tomcat/apache-tomcat-9.0.27/lib/tomcat-util-scan.jar"/>
+	<classpathentry kind="lib" path="E:/Tomcat/apache-tomcat-9.0.27/lib/tomcat-websocket.jar"/>
+	<classpathentry kind="lib" path="E:/Tomcat/apache-tomcat-9.0.27/lib/websocket-api.jar"/>
+	<classpathentry kind="lib" path="D:/jiayu/MySQL  drivers/mysql-connector-java-8.0.18/mysql-connector-java-8.0.18/mysql-connector-java-8.0.18.jar"/>
+	<classpathentry kind="lib" path="E:/Xampp/xampp/tomcat/lib/annotations-api.jar"/>
+	<classpathentry kind="lib" path="E:/Xampp/xampp/tomcat/lib/catalina.jar"/>
+	<classpathentry kind="lib" path="E:/Xampp/xampp/tomcat/lib/catalina-ant.jar"/>
+	<classpathentry kind="lib" path="E:/Xampp/xampp/tomcat/lib/catalina-ha.jar"/>
+	<classpathentry kind="lib" path="E:/Xampp/xampp/tomcat/lib/catalina-tribes.jar"/>
+	<classpathentry kind="lib" path="E:/Xampp/xampp/tomcat/lib/ecj-4.4.2.jar"/>
+	<classpathentry kind="lib" path="E:/Xampp/xampp/tomcat/lib/el-api.jar"/>
+	<classpathentry kind="lib" path="E:/Xampp/xampp/tomcat/lib/jasper.jar"/>
+	<classpathentry kind="lib" path="E:/Xampp/xampp/tomcat/lib/jasper-el.jar"/>
+	<classpathentry kind="lib" path="E:/Xampp/xampp/tomcat/lib/jsp-api.jar"/>
+	<classpathentry kind="lib" path="E:/Xampp/xampp/tomcat/lib/servlet-api.jar"/>
+	<classpathentry kind="lib" path="E:/Xampp/xampp/tomcat/lib/tomcat7-websocket.jar"/>
+	<classpathentry kind="lib" path="E:/Xampp/xampp/tomcat/lib/tomcat-api.jar"/>
+	<classpathentry kind="lib" path="E:/Xampp/xampp/tomcat/lib/tomcat-coyote.jar"/>
+	<classpathentry kind="lib" path="E:/Xampp/xampp/tomcat/lib/tomcat-dbcp.jar"/>
+	<classpathentry kind="lib" path="E:/Xampp/xampp/tomcat/lib/tomcat-i18n-es.jar"/>
+	<classpathentry kind="lib" path="E:/Xampp/xampp/tomcat/lib/tomcat-i18n-fr.jar"/>
+	<classpathentry kind="lib" path="E:/Xampp/xampp/tomcat/lib/tomcat-i18n-ja.jar"/>
+	<classpathentry kind="lib" path="E:/Xampp/xampp/tomcat/lib/tomcat-i18n-ru.jar"/>
+	<classpathentry kind="lib" path="E:/Xampp/xampp/tomcat/lib/tomcat-jdbc.jar"/>
+	<classpathentry kind="lib" path="E:/Xampp/xampp/tomcat/lib/tomcat-util.jar"/>
+	<classpathentry kind="lib" path="E:/Xampp/xampp/tomcat/lib/websocket-api.jar"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>
